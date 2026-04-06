@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotonda — Request Access</title>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="binding-edge-top"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <svg width="24" height="22" viewBox="0 0 50 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M45.3125 39.8667H4.6875V42.1667H45.3125V39.8667Z" fill="#1A1A1A"/>
+        <path opacity="0.5" d="M48.4375 42.1667H1.5625V43.7H48.4375V42.1667Z" fill="#1A1A1A"/>
+        <path d="M12.5 18.4H9.375V39.8667H12.5V18.4Z" fill="#1A1A1A"/>
+        <path d="M21.875 18.4H18.75V39.8667H21.875V18.4Z" fill="#1A1A1A"/>
+        <path d="M31.25 18.4H28.125V39.8667H31.25V18.4Z" fill="#1A1A1A"/>
+        <path d="M40.625 18.4H37.5V39.8667H40.625V18.4Z" fill="#1A1A1A"/>
+        <path d="M43.75 16.8667H6.25V19.1667H43.75V16.8667Z" fill="#1A1A1A"/>
+        <path d="M9.375 16.8667C19.7917 7.66667 30.2083 7.66667 40.625 16.8667" stroke="#1A1A1A" stroke-width="2.5"/>
+        <path d="M25 9.2C25.8629 9.2 26.5625 8.5135 26.5625 7.66667C26.5625 6.81983 25.8629 6.13333 25 6.13333C24.1371 6.13333 23.4375 6.81983 23.4375 7.66667C23.4375 8.5135 24.1371 9.2 25 9.2Z" fill="#1A1A1A"/>
+      </svg>
+      <span>R O T O N D A</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="platform.html">Platform</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="nav-cta">Request Access</a>
+    </div>
+  </nav>
+
+  <section class="page" style="padding-top: 80px;">
+    <h2>Request Access</h2>
+    <div class="rule"></div>
+
+    <p class="section-intro">
+      Rotonda is onboarding design partners now. Tell us about your firm
+      and we'll be in touch.
+    </p>
+
+    <form class="contact-form" action="https://formspree.io/f/xformid" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="firm">Firm</label>
+        <input type="text" id="firm" name="firm" required>
+      </div>
+      <div class="form-group">
+        <label for="aum">AUM Range</label>
+        <select id="aum" name="aum" required>
+          <option value="" disabled selected>Select range</option>
+          <option value="<$500M">&lt;$500M</option>
+          <option value="$500M-$1B">$500M - $1B</option>
+          <option value="$1B-$5B">$1B - $5B</option>
+          <option value="$5B-$10B">$5B - $10B</option>
+          <option value="$10B+">$10B+</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message <span style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Submit Request</button>
+    </form>
+  </section>
+
+  <footer class="footer-home">
+    <div class="footer-inner">
+      <span class="footer-logo">ROTONDA</span>
+      <div class="footer-links">
+        <a href="contact.html">Contact</a>
+        <span>© 2026 Rotonda</span>
+      </div>
+    </div>
+  </footer>
+  <div class="binding-edge-bottom"></div>
+
+</body>
+</html>

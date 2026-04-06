@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotonda — Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="binding-edge-top"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <svg width="24" height="22" viewBox="0 0 50 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M45.3125 39.8667H4.6875V42.1667H45.3125V39.8667Z" fill="#1A1A1A"/>
+        <path opacity="0.5" d="M48.4375 42.1667H1.5625V43.7H48.4375V42.1667Z" fill="#1A1A1A"/>
+        <path d="M12.5 18.4H9.375V39.8667H12.5V18.4Z" fill="#1A1A1A"/>
+        <path d="M21.875 18.4H18.75V39.8667H21.875V18.4Z" fill="#1A1A1A"/>
+        <path d="M31.25 18.4H28.125V39.8667H31.25V18.4Z" fill="#1A1A1A"/>
+        <path d="M40.625 18.4H37.5V39.8667H40.625V18.4Z" fill="#1A1A1A"/>
+        <path d="M43.75 16.8667H6.25V19.1667H43.75V16.8667Z" fill="#1A1A1A"/>
+        <path d="M9.375 16.8667C19.7917 7.66667 30.2083 7.66667 40.625 16.8667" stroke="#1A1A1A" stroke-width="2.5"/>
+        <path d="M25 9.2C25.8629 9.2 26.5625 8.5135 26.5625 7.66667C26.5625 6.81983 25.8629 6.13333 25 6.13333C24.1371 6.13333 23.4375 6.81983 23.4375 7.66667C23.4375 8.5135 24.1371 9.2 25 9.2Z" fill="#1A1A1A"/>
+      </svg>
+      <span>R O T O N D A</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="platform.html" class="active">Platform</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Request Access</a>
+    </div>
+  </nav>
+
+  <section class="page" style="padding-top: 80px;">
+    <h2>The Platform</h2>
+    <div class="rule"></div>
+
+    <p class="section-intro">
+      The structured data and modeling infrastructure for Commercial Real Estate.
+      AI is the engine. Rotonda is the infrastructure that makes the engine useful.
+      As models improve, Rotonda improves. Complementary — not competitive.
+    </p>
+
+    <div class="layers-list">
+      <div class="layer">
+        <span class="layer-num">1</span>
+        <div>
+          <strong>Structured Asset Data</strong>
+          <p>Every property, lease, and tenant stored as structured records — not spreadsheet cells. Every data point traceable to its source document.</p>
+        </div>
+      </div>
+      <div class="layer">
+        <span class="layer-num">2</span>
+        <div>
+          <strong>Connected Financial Modeling</strong>
+          <p>Models with transparent calculation logic. Change a rent escalation and see exactly how it flows through NOI, cash flow, and returns — instantly.</p>
+        </div>
+      </div>
+      <div class="layer">
+        <span class="layer-num">3</span>
+        <div>
+          <strong>Scenario Analysis</strong>
+          <p>Run rate hike, lease-up, and hold/sell scenarios side by side. Compare assumptions across your entire portfolio — not in separate workbooks.</p>
+        </div>
+      </div>
+      <div class="layer">
+        <span class="layer-num">4</span>
+        <div>
+          <strong>Portfolio Rollup</strong>
+          <p>Automatic aggregation across funds, markets, and strategies. Real-time covenant monitoring and performance tracking at the portfolio level.</p>
+        </div>
+      </div>
+      <div class="layer">
+        <span class="layer-num">5</span>
+        <div>
+          <strong>Natural Language Interface</strong>
+          <p>Ask questions in plain English — "What are the 10 biggest risks in my portfolio?" AI translates your intent; the system runs the numbers.</p>
+        </div>
+      </div>
+      <div class="layer">
+        <span class="layer-num">6</span>
+        <div>
+          <strong>Data Ingestion & Audit Trail</strong>
+          <p>Upload rent rolls, operating statements, and lease abstracts. AI extracts the data. Every change tracked with full lineage.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESIGN: Deal Summary -->
+    <div class="design-showcase">
+      <div class="design-label">Deal Summary</div>
+      <div class="design-frame" onclick="this.classList.toggle('expanded')">
+        <img src="img/deal-summary.png" alt="Deal summary view showing KPI strip, property details, and financial metrics">
+      </div>
+      <p class="design-caption">
+        Every asset opens to a structured summary — cap rate, IRR, NOI, occupancy,
+        and active scenario context in a single view.
+      </p>
+    </div>
+
+    <!-- DESIGN: Scenario Canvas -->
+    <div class="design-showcase">
+      <div class="design-label">Scenario Canvas</div>
+      <div class="design-frame" onclick="this.classList.toggle('expanded')">
+        <img src="img/scenario-canvas.png" alt="Scenario canvas with branching scenario nodes">
+      </div>
+      <p class="design-caption">
+        Fork, branch, and compare scenarios visually. Model rate hikes, lease-up
+        timelines, or disposition strategies — each as a complete set of assumptions.
+      </p>
+    </div>
+
+    <!-- DESIGN: Terminal -->
+    <div class="design-showcase">
+      <div class="design-label">Natural Language Terminal</div>
+      <div class="design-frame" onclick="this.classList.toggle('expanded')">
+        <img src="img/terminal-query.png" alt="Natural language query terminal showing NOI analysis">
+      </div>
+      <p class="design-caption">
+        Ask questions across your portfolio in plain English. "What's the accrued NOI
+        through year 5?" — the AI plans, the system calculates.
+      </p>
+    </div>
+
+    <!-- DESIGN: Tenant Detail -->
+    <div class="design-showcase">
+      <div class="design-label">Tenant Detail</div>
+      <div class="design-frame" onclick="this.classList.toggle('expanded')">
+        <img src="img/tenant-detail.png" alt="Tenant detail view with lease structure and document provenance">
+      </div>
+      <p class="design-caption">
+        Every tenant record linked to its source lease. Base rent, escalations,
+        recovery structures, and renewal options — structured, not buried in PDFs.
+      </p>
+    </div>
+
+    <!-- DESIGN: Comments -->
+    <div class="design-showcase">
+      <div class="design-label">Collaboration & Comments</div>
+      <div class="design-frame" onclick="this.classList.toggle('expanded')">
+        <img src="img/comment-card.png" alt="Comment card with document provenance and inline collaboration">
+      </div>
+      <p class="design-caption">
+        Contextual comments attached to specific assumptions, rent rolls, and calculations.
+        Every note tied to the data it references — not lost in email threads.
+      </p>
+    </div>
+
+    <!-- DESIGN: Portfolio Dashboard -->
+    <div class="design-showcase">
+      <div class="design-label">Portfolio Dashboard</div>
+      <div class="design-frame" onclick="this.classList.toggle('expanded')">
+        <img src="img/portfolio-dashboard.png" alt="Portfolio dashboard with KPI strip and asset table">
+      </div>
+      <p class="design-caption">
+        Portfolio-level intelligence across all assets. NOI, occupancy, WALT,
+        covenant monitoring, and rollup analytics — updated continuously.
+      </p>
+    </div>
+
+    <!-- What the chain enables -->
+    <h3 class="subsection-heading">What the Chain Enables</h3>
+    <div class="rule"></div>
+
+    <p>Once your asset data is structured, scenario-aware, and queryable:</p>
+
+    <div class="enables-grid">
+      <div class="enables-card">
+        <strong>Covenant Monitoring</strong>
+        <p>Detect trajectory toward breach before it happens. Alert with context: which covenant, which asset, what changed.</p>
+      </div>
+      <div class="enables-card">
+        <strong>UW vs. Actuals</strong>
+        <p>Real-time IRR and MOIC tracking against your original underwriting. Not quarterly manual re-underwriting in Excel.</p>
+      </div>
+      <div class="enables-card">
+        <strong>Investor Narratives</strong>
+        <p>Auto-generated quarterly commentary grounded in your actual portfolio data with correct attribution.</p>
+      </div>
+      <div class="enables-card">
+        <strong>Event Propagation</strong>
+        <p>Reprice your entire portfolio in minutes when a rate change or macro shock hits. Surface the assets that need attention.</p>
+      </div>
+    </div>
+
+    <p class="bold-statement">
+      The data architecture is the compounding asset.
+    </p>
+  </section>
+
+  <footer class="footer-home">
+    <div class="footer-inner">
+      <span class="footer-logo">ROTONDA</span>
+      <div class="footer-links">
+        <a href="contact.html">Contact</a>
+        <span>© 2026 Rotonda</span>
+      </div>
+    </div>
+  </footer>
+  <div class="binding-edge-bottom"></div>
+
+</body>
+</html>

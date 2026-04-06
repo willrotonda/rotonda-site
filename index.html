@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotonda — AI-Native Asset & Portfolio Management for CRE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="binding-edge-top"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <svg width="24" height="22" viewBox="0 0 50 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M45.3125 39.8667H4.6875V42.1667H45.3125V39.8667Z" fill="#1A1A1A"/>
+        <path opacity="0.5" d="M48.4375 42.1667H1.5625V43.7H48.4375V42.1667Z" fill="#1A1A1A"/>
+        <path d="M12.5 18.4H9.375V39.8667H12.5V18.4Z" fill="#1A1A1A"/>
+        <path d="M21.875 18.4H18.75V39.8667H21.875V18.4Z" fill="#1A1A1A"/>
+        <path d="M31.25 18.4H28.125V39.8667H31.25V18.4Z" fill="#1A1A1A"/>
+        <path d="M40.625 18.4H37.5V39.8667H40.625V18.4Z" fill="#1A1A1A"/>
+        <path d="M43.75 16.8667H6.25V19.1667H43.75V16.8667Z" fill="#1A1A1A"/>
+        <path d="M9.375 16.8667C19.7917 7.66667 30.2083 7.66667 40.625 16.8667" stroke="#1A1A1A" stroke-width="2.5"/>
+        <path d="M25 9.2C25.8629 9.2 26.5625 8.5135 26.5625 7.66667C26.5625 6.81983 25.8629 6.13333 25 6.13333C24.1371 6.13333 23.4375 6.81983 23.4375 7.66667C23.4375 8.5135 24.1371 9.2 25 9.2Z" fill="#1A1A1A"/>
+      </svg>
+      <span>R O T O N D A</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="platform.html">Platform</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Request Access</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-home">
+    <div class="hero-home-inner">
+      <div class="hero-rule"></div>
+      <h1>Reactive firms track performance.<br>Proactive firms engineer it.</h1>
+      <p class="hero-home-sub">
+        Rotonda is the asset and portfolio management platform
+        that gives commercial real estate firms real-time visibility
+        and scenario intelligence across every deal.
+      </p>
+      <a href="contact.html" class="btn-primary">Get Early Access</a>
+    </div>
+  </section>
+
+  <div class="divider-green"></div>
+
+  <!-- PROBLEM -->
+  <section class="section-problem">
+    <div class="section-inner">
+      <span class="section-label">The Status Quo</span>
+      <h2 class="section-heading">Most firms don't have a data problem.<br>They have a visibility problem.</h2>
+
+      <div class="problem-list">
+        <div class="problem-row">
+          <span class="problem-num">01</span>
+          <div class="problem-accent"></div>
+          <div class="problem-title">Underwriting is a bottleneck</div>
+          <div class="problem-desc">Deals move faster than your models. Every hour spent rebuilding a spreadsheet is an hour a competitor spends closing.</div>
+        </div>
+        <div class="problem-row">
+          <span class="problem-num">02</span>
+          <div class="problem-accent"></div>
+          <div class="problem-title">Scenarios live in silos</div>
+          <div class="problem-desc">Dozens of Excel versions per deal. No way to compare across assets. Portfolio-wide scenario analysis is a fantasy.</div>
+        </div>
+        <div class="problem-row">
+          <span class="problem-num">03</span>
+          <div class="problem-accent"></div>
+          <div class="problem-title">Performance is rearview</div>
+          <div class="problem-desc">By the time your analyst updates the model, the variance already happened. You're reacting to history, not managing risk.</div>
+        </div>
+        <div class="problem-row">
+          <span class="problem-num">04</span>
+          <div class="problem-accent"></div>
+          <div class="problem-title">Legacy tools are stuck</div>
+          <div class="problem-desc">Argus, Yardi, MRI — necessary but frozen in time. Built for compliance, not intelligence. The industry moved; they didn't.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider-green"></div>
+
+  <!-- SCENARIO CAROUSEL -->
+  <section class="section-scenarios">
+    <div class="section-inner">
+      <span class="section-label">The Platform</span>
+      <h2 class="section-heading">See every deal. Model every scenario.<br>Act before the market moves.</h2>
+
+      <div class="carousel">
+        <button class="carousel-arrow carousel-prev" aria-label="Previous" disabled>&#10094;</button>
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+
+            <!-- SLIDE 1: PORTFOLIO -->
+            <div class="carousel-slide" data-label="Portfolio">
+              <div class="terminal-bar">
+                <span class="terminal-chevron">▶</span>
+                <div class="terminal-input">What's my downside if cap rates widen 50bps across the book?</div>
+                <span class="terminal-shortcut">⌘K</span>
+              </div>
+              <div class="scenario-canvas">
+                <!-- Connectors: Base → left trunk -->
+                <div class="connector-h" style="left:190px;top:187px;width:40px;"></div>
+                <!-- Vertical left trunk -->
+                <div class="connector-v" style="left:229px;top:68px;height:240px;"></div>
+                <!-- Left trunk → branches -->
+                <div class="connector-h" style="left:230px;top:67px;width:50px;"></div>
+                <div class="connector-h" style="left:230px;top:187px;width:50px;"></div>
+                <div class="connector-h" style="left:230px;top:307px;width:50px;"></div>
+                <!-- Branches → right trunk -->
+                <div class="connector-h" style="left:430px;top:67px;width:30px;"></div>
+                <div class="connector-h" style="left:430px;top:187px;width:30px;"></div>
+                <div class="connector-h" style="left:430px;top:307px;width:30px;"></div>
+                <!-- Vertical right trunk -->
+                <div class="connector-v" style="left:459px;top:68px;height:240px;"></div>
+                <!-- Right trunk → rollup -->
+                <div class="connector-h" style="left:460px;top:187px;width:60px;"></div>
+                <!-- Rollup → ghost (dashed) -->
+                <div class="connector-h connector-dashed" style="left:670px;top:187px;width:60px;"></div>
+
+                <div class="scenario-node node-base" style="left:40px;top:148px;">
+                  <div class="node-title">Base Case</div>
+                  <div class="node-metric"><span>IRR</span> <strong>5.8%</strong></div>
+                  <div class="node-metric"><span>NAV</span> <strong>$1.2B</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:280px;top:28px;">
+                  <div class="node-title">Office Exposure</div>
+                  <div class="node-metric"><span>IRR</span> <strong>4.2%</strong></div>
+                  <div class="node-metric"><span>Δ NAV</span> <strong>-$14.2M</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:280px;top:148px;">
+                  <div class="node-title">Multifamily Exp.</div>
+                  <div class="node-metric"><span>IRR</span> <strong>4.9%</strong></div>
+                  <div class="node-metric"><span>Δ NAV</span> <strong>-$8.1M</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:280px;top:268px;">
+                  <div class="node-title">Retail Exposure</div>
+                  <div class="node-metric"><span>IRR</span> <strong>5.1%</strong></div>
+                  <div class="node-metric"><span>Δ NAV</span> <strong>-$3.7M</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:520px;top:148px;">
+                  <div class="node-title">Portfolio Impact</div>
+                  <div class="node-metric"><span>IRR</span> <strong>3.4%</strong></div>
+                  <div class="node-metric"><span>Δ NAV</span> <strong>-$26.0M</strong></div>
+                </div>
+                <div class="scenario-node node-ghost" style="left:730px;top:148px;">
+                  <div class="node-title">Rate Hike + Cap</div>
+                  <div class="node-metric"><em>Pending...</em></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 2: SUBSET -->
+            <div class="carousel-slide" data-label="Subset">
+              <div class="terminal-bar">
+                <span class="terminal-chevron">▶</span>
+                <div class="terminal-input">How exposed am I in the Southeast if rates hold at 5.5%?</div>
+                <span class="terminal-shortcut">⌘K</span>
+              </div>
+              <div class="scenario-canvas">
+                <!-- Connectors: Base → left trunk -->
+                <div class="connector-h" style="left:190px;top:187px;width:40px;"></div>
+                <!-- Vertical left trunk -->
+                <div class="connector-v" style="left:229px;top:68px;height:240px;"></div>
+                <!-- Left trunk → asset branches -->
+                <div class="connector-h" style="left:230px;top:67px;width:50px;"></div>
+                <div class="connector-h" style="left:230px;top:187px;width:50px;"></div>
+                <div class="connector-h" style="left:230px;top:307px;width:50px;"></div>
+                <!-- Assets → rate impact nodes -->
+                <div class="connector-h" style="left:430px;top:67px;width:90px;"></div>
+                <div class="connector-h" style="left:430px;top:187px;width:90px;"></div>
+                <div class="connector-h" style="left:430px;top:307px;width:90px;"></div>
+
+                <div class="scenario-node node-base" style="left:40px;top:148px;">
+                  <div class="node-title">SE Multifamily</div>
+                  <div class="node-metric"><span>Assets</span> <strong>4</strong></div>
+                  <div class="node-metric"><span>AUM</span> <strong>$380M</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:280px;top:28px;">
+                  <div class="node-title">Arden Place</div>
+                  <div class="node-metric"><span>IRR</span> <strong>4.8%</strong></div>
+                  <div class="node-metric"><span>Nashville</span> <strong>220 units</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:280px;top:148px;">
+                  <div class="node-title">Magnolia Gardens</div>
+                  <div class="node-metric"><span>IRR</span> <strong>5.1%</strong></div>
+                  <div class="node-metric"><span>Atlanta</span> <strong>180 units</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:280px;top:268px;">
+                  <div class="node-title">Cypress Landing</div>
+                  <div class="node-metric"><span>IRR</span> <strong>3.9%</strong></div>
+                  <div class="node-metric"><span>Charlotte</span> <strong>310 units</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:520px;top:28px;">
+                  <div class="node-title">Rate Impact</div>
+                  <div class="node-metric"><span>Δ IRR</span> <strong>-0.6%</strong></div>
+                  <div class="node-metric"><span>Δ DS</span> <strong>+$180K/yr</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:520px;top:148px;">
+                  <div class="node-title">Rate Impact</div>
+                  <div class="node-metric"><span>Δ IRR</span> <strong>-0.4%</strong></div>
+                  <div class="node-metric"><span>Δ DS</span> <strong>+$120K/yr</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:520px;top:268px;">
+                  <div class="node-title">Rate Impact</div>
+                  <div class="node-metric"><span>Δ IRR</span> <strong>-0.9%</strong></div>
+                  <div class="node-metric"><span>Δ DS</span> <strong>+$240K/yr</strong></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 3: DEAL -->
+            <div class="carousel-slide" data-label="Deal">
+              <div class="terminal-bar">
+                <span class="terminal-chevron">▶</span>
+                <div class="terminal-input">What's my IRR if the anchor lease doesn't renew at 245 Commerce?</div>
+                <span class="terminal-shortcut">⌘K</span>
+              </div>
+              <div class="scenario-canvas">
+                <!-- Connectors: Base → left trunk -->
+                <div class="connector-h" style="left:190px;top:187px;width:25px;"></div>
+                <!-- Vertical left trunk -->
+                <div class="connector-v" style="left:214px;top:58px;height:240px;"></div>
+                <!-- Left trunk → scenario branches -->
+                <div class="connector-h" style="left:215px;top:57px;width:60px;"></div>
+                <div class="connector-h" style="left:215px;top:187px;width:60px;"></div>
+                <div class="connector-h" style="left:215px;top:297px;width:60px;"></div>
+                <!-- Vacates → sub-junction -->
+                <div class="connector-h" style="left:425px;top:297px;width:30px;"></div>
+                <!-- Sub vertical trunk -->
+                <div class="connector-v" style="left:454px;top:258px;height:90px;"></div>
+                <!-- Sub branches -->
+                <div class="connector-h" style="left:455px;top:257px;width:65px;"></div>
+                <div class="connector-h" style="left:455px;top:347px;width:65px;"></div>
+                <!-- Ghost dashed -->
+                <div class="connector-h connector-dashed" style="left:670px;top:257px;width:60px;"></div>
+
+                <div class="scenario-node node-base" style="left:40px;top:148px;">
+                  <div class="node-title">245 Commerce</div>
+                  <div class="node-metric"><span>IRR</span> <strong>6.2%</strong></div>
+                  <div class="node-metric"><span>Value</span> <strong>$42.5M</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:275px;top:18px;">
+                  <div class="node-title">Renews at Market</div>
+                  <div class="node-metric"><span>IRR</span> <strong>6.2%</strong></div>
+                  <div class="node-metric"><span>Term</span> <strong>10yr NNN</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:275px;top:148px;">
+                  <div class="node-title">Renews Below</div>
+                  <div class="node-metric"><span>IRR</span> <strong>5.1%</strong></div>
+                  <div class="node-metric"><span>Conc.</span> <strong>15% rent</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:275px;top:258px;">
+                  <div class="node-title">Vacates</div>
+                  <div class="node-metric"><span>IRR</span> <strong>3.4%</strong></div>
+                  <div class="node-metric"><span>Down</span> <strong>12mo</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:520px;top:218px;">
+                  <div class="node-title">Backfill 6mo</div>
+                  <div class="node-metric"><span>IRR</span> <strong>4.1%</strong></div>
+                  <div class="node-metric"><span>Rate</span> <strong>90% mkt</strong></div>
+                </div>
+                <div class="scenario-node node-sensitivity" style="left:520px;top:308px;">
+                  <div class="node-title">Backfill 18mo</div>
+                  <div class="node-metric"><span>IRR</span> <strong>2.2%</strong></div>
+                  <div class="node-metric"><span>TI/LC</span> <strong>$45/sf</strong></div>
+                </div>
+                <div class="scenario-node node-ghost" style="left:730px;top:218px;">
+                  <div class="node-title">Anchor Loss +<br>Rate Hike</div>
+                  <div class="node-metric"><em>Pending...</em></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-arrow carousel-next" aria-label="Next">&#10095;</button>
+      </div>
+
+      <div class="carousel-indicators">
+        <button class="carousel-dot active" data-index="0">
+          <span class="dot"></span> Portfolio
+        </button>
+        <button class="carousel-dot" data-index="1">
+          <span class="dot"></span> Subset
+        </button>
+        <button class="carousel-dot" data-index="2">
+          <span class="dot"></span> Deal
+        </button>
+      </div>
+
+      <p class="carousel-caption">
+        Ask a question. See every branch.<br>
+        From a single deal to your entire portfolio.
+      </p>
+    </div>
+  </section>
+
+  <div class="divider-green"></div>
+
+  <!-- CAPABILITIES -->
+  <section class="section-capabilities">
+    <div class="section-inner">
+      <span class="section-label">Capabilities</span>
+      <div class="cap-grid">
+        <div class="cap-card">
+          <span class="cap-layer">Layer 1</span>
+          <strong>Structured Data</strong>
+          <p>Every fact — rent rolls, draws, covenants — lives as structured, queryable data. Not rows in a spreadsheet.</p>
+        </div>
+        <div class="cap-card">
+          <span class="cap-layer">Layer 2</span>
+          <strong>Scenario Engine</strong>
+          <p>Model any assumption. Branch any deal. Compare across your portfolio in seconds, not days.</p>
+        </div>
+        <div class="cap-card">
+          <span class="cap-layer">Layer 3</span>
+          <strong>Real-Time Visibility</strong>
+          <p>UW vs. actuals, live. Know when performance deviates — before your quarterly review tells you.</p>
+        </div>
+        <div class="cap-card">
+          <span class="cap-layer">Layer 4</span>
+          <strong>AI Intelligence</strong>
+          <p>AI that plans and explains over structured data. It never calculates. It never hallucinates your IRR.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider-green"></div>
+
+  <!-- CTA -->
+  <section class="section-cta">
+    <div class="section-inner" style="text-align:center;">
+      <div class="hero-rule"></div>
+      <h2 class="cta-headline">Your competitors are building<br>their AI strategy. Are you?</h2>
+      <p class="cta-sub">
+        The firms that move now will define how AI works in CRE.<br>
+        The ones that wait will adopt someone else's playbook.
+      </p>
+      <a href="contact.html" class="btn-primary">Get Early Access</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-home">
+    <div class="footer-inner">
+      <span class="footer-logo">ROTONDA</span>
+      <div class="footer-links">
+        <a href="contact.html">Contact</a>
+        <span>© 2026 Rotonda</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="binding-edge-bottom"></div>
+
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+    const prev = document.querySelector('.carousel-prev');
+    const next = document.querySelector('.carousel-next');
+    let current = 0;
+
+    function goTo(index) {
+      current = index;
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+      prev.disabled = current === 0;
+      next.disabled = current === slides.length - 1;
+    }
+
+    prev.addEventListener('click', () => { if (current > 0) goTo(current - 1); });
+    next.addEventListener('click', () => { if (current < slides.length - 1) goTo(current + 1); });
+    dots.forEach(d => d.addEventListener('click', () => goTo(parseInt(d.dataset.index))));
+  </script>
+
+</body>
+</html>
