@@ -77,7 +77,7 @@ em { font-style: italic; }
   z-index: 100;
   background: rgba(255, 253, 248, 0.92);
   backdrop-filter: blur(8px);
-  height: 60px;
+  height: 76px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,14 +88,21 @@ em { font-style: italic; }
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
+}
+
+.nav-logo svg {
+  width: 36px;
+  height: 33px;
+  display: block;
 }
 
 .nav-logo span {
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.25em;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.42em;
   color: var(--ink);
+  text-transform: uppercase;
 }
 
 .nav-links {
@@ -252,7 +259,7 @@ em { font-style: italic; }
   display: grid;
   grid-template-columns: 40px 3px 1fr 2fr;
   gap: 24px;
-  align-items: start;
+  align-items: center;
   padding: 28px 0;
   border-bottom: 1px solid var(--rule);
 }
@@ -268,7 +275,6 @@ em { font-style: italic; }
   width: 3px;
   height: 40px;
   background: var(--green);
-  margin-top: 2px;
 }
 
 .problem-title {
