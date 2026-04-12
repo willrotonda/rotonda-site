@@ -46,7 +46,12 @@
       and we'll be in touch.
     </p>
 
-    <form class="contact-form" action="https://formspree.io/f/xformid" method="POST">
+    <div id="success-msg" class="success-message" style="display:none;">
+      <p style="font-weight:600;font-size:14px;color:var(--green);margin-bottom:12px;">Request received.</p>
+      <p style="color:var(--ink-medium);">We'll be in touch shortly.</p>
+    </div>
+
+    <form id="access-form" class="contact-form" action="/api/contact" method="POST">
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
@@ -76,6 +81,14 @@
       </div>
       <button type="submit" class="btn-primary">Submit Request</button>
     </form>
+
+    <script>
+      if (new URLSearchParams(window.location.search).has('submitted')) {
+        document.getElementById('access-form').style.display = 'none';
+        document.getElementById('success-msg').style.display = 'block';
+        history.replaceState(null, '', '/contact');
+      }
+    </script>
   </section>
 
   <footer class="footer-home">
