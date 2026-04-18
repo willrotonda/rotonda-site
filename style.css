@@ -88,21 +88,12 @@ em { font-style: italic; }
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 18px;
 }
 
-.nav-logo svg {
-  width: 36px;
-  height: 33px;
+.nav-logo img {
+  height: 40px;
+  width: auto;
   display: block;
-}
-
-.nav-logo span {
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.42em;
-  color: var(--ink);
-  text-transform: uppercase;
 }
 
 .nav-links {
